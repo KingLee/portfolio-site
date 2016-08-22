@@ -1,0 +1,103 @@
+@mixin border-radius($vert, $side, $radius) {
+	border-#{$vert}-#{$side}-radius: $radius;
+}
+
+@mixin bp($point) {
+	@if ($MQs) {
+		@if $point == emb-bear {
+	    	@media #{$mq-embryoBear} { @content; }
+	  	}
+		@else if $point == inf-bear {
+	    	@media #{$mq-infBear} { @content; }
+	  	}
+	  	@else if $point == baby-bear {
+	    	@media #{$mq-babyBear} { @content; }
+	  	}
+	  	@else if $point == mama-bear {
+	    	@media #{$mq-mamaBear} { @content; }
+	  	}
+	  	@else if $point == papa-bear {
+	    	@media #{$mq-papaBear}  { @content; }
+	  	}
+	  	@else if $point == retina-bear {
+	  		@media #{$mq-retinaBear}  { @content; }
+	  	}
+	}
+	@else {
+		@if $point != retina-bear {
+			@content;
+		}
+	}
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 0, $color: #000, $inset:"") {
+	-webkit-box-shadow: $x $y $blur $color #{$inset};
+	-moz-box-shadow: 	$x $y $blur $color #{$inset};
+	box-shadow: 		$x $y $blur $color #{$inset};
+}
+
+@mixin float($dir: left) {
+	display:			inline;
+	float:				$dir;
+}
+
+@mixin font-size($pixelSize: $baseFontSize) {
+    font-size: #{$pixelSize}px;
+    font-size: #{$pixelSize / $baseFontSize}rem;
+}
+
+@mixin inline-block() {
+	display:			inline-block;
+	*display:			inline;
+	*zoom:				1;
+}
+
+@mixin linear-gradient($colStart, $colEnd) {
+	background:			-webkit-gradient(linear, left top, left bottom, from($colStart), to($colEnd)) 0 0;
+	background:			-moz-linear-gradient(top, $colStart, $colEnd) 0 0;
+	background:			-ms-linear-gradient(top, $colStart, $colEnd);
+	background:			-o-linear-gradient(top, $colStart, $colEnd);
+	//filter:			progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$colStart}, endColorstr=#{$colEnd});
+}
+
+@mixin linear-gradient-bg-image($url, $repeat, $x, $y, $colStart, $colEnd) {
+	background: url($url) $repeat $x $y;
+	background: url($url) $repeat $x $y, -webkit-gradient(linear, left top, left bottom, from($colStart), to($colEnd)) 0 0;
+	background: url($url) $repeat $x $y, -moz-linear-gradient(top, $colStart, $colEnd);
+	background: url($url) $repeat $x $y, -ms-linear-gradient(top, $colStart, $colEnd);
+	background: url($url) $repeat $x $y, -o-linear-gradient(top, $colStart, $colEnd);
+}
+
+@mixin opacity($value) {
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100}); // ie8
+	filter: alpha(opacity=#{$value * 100}); // ie 6-7
+	opacity: $value; // good browsers
+}
+
+@mixin tap-highlight-color($color) {
+	-webkit-tap-highlight-color:	$color;
+	-moz-tap-highlight-color:		$color;
+	-o-tap-highlight-color:			$color;
+}
+
+@mixin transform($transform) {
+	-webkit-transform:	$transform;
+	-moz-transform:		$transform;
+	-ms-transform:		$transform;
+	-o-transform: 		$transform;
+	transform:			$transform;
+}
+
+@mixin transition($property, $duration, $function: linear) {	
+	-webkit-transition: $property $duration $function;
+	-moz-transition: 	$property $duration $function;
+	-ms-transition: 	$property $duration $function;
+	-o-transition: 		$property $duration $function;
+	transition: 		$property $duration $function;
+}
+
+@mixin wordBreak(){
+	-ms-word-wrap: break-all;
+	    word-wrap: break-all;
+	    word-wrap: break-word;
+}

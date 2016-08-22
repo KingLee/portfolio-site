@@ -1,0 +1,41 @@
+.g-full { width: 100%; }
+
+.g-two-thirds {
+	@include bp(baby-bear) { float: left; width: 100%; }
+	@include bp(mama-bear) { float: left; width: 66.666666666%; }
+	.l-faux-table > & {
+
+		@include bp(mama-bear) { display: table-cell; float: none; vertical-align: top; }
+	}
+}
+
+.g-half {
+
+	@include bp(baby-bear) { float: left; width: 50%; }
+
+	.l-faux-table > & {
+
+		@include bp(baby-bear) { display: table-cell; float: none; vertical-align: top; }
+	}
+}
+
+.g-third {
+	@include bp(baby-bear) { float: left; width: 100%; }
+	@include bp(mama-bear) { float: left; width: 33.333333333%; }
+
+	.l-faux-table > & {
+
+		@include bp(mama-bear) { display: table-cell; float: none; vertical-align: top; }
+	}
+}
+
+.g-quarter {
+
+	@include bp(baby-bear) { float: left; width: 50%; }
+	@include bp(mama-bear) { width: 25%; }
+
+	.l-faux-table > & {
+
+		@include bp(baby-bear) { display: table-cell; float: none; vertical-align: top; }
+	}
+}

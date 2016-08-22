@@ -1,0 +1,439 @@
+.list-unstyled { margin: 0; padding: 0; list-style: none;
+
+    li { margin-left: 0; }
+}
+
+.list-inline { margin-left: 4px;
+    
+    li { @include inline-block(); margin-left: -4px; }
+}
+
+.list-floated {
+    
+    li { float: left; }
+}
+
+.project-list {
+	
+	height:100%;
+	background-color: rgba(13, 236, 175, 1.0);
+}
+
+.project {
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height: 33.333333%;
+	display:block;
+	color:$c-body;
+	transition:.4s ease-out;
+	-webkit-transition: .4s ease-out;
+	height:270px;
+
+	@include bp(baby-bear) {
+		height:420px;
+		transition:0s;
+		-webkit-transition: 0s;
+	}
+	@include bp(mama-bear) {
+		height:33.333333333333%;
+	}
+}
+
+.project-overlay p {
+	line-height: 1.4;
+}
+
+.project:hover {
+	background-size: cover 130%;
+	transition: .4s ease-out;
+	-webkit-transition: .4s ease-out;
+}
+
+.project-overlay {
+	opacity:0;
+	width:100%;
+	height:100%;
+	padding:0 3em;
+	position:relative;
+	z-index:999;
+	transition: all .6s;
+}
+
+.project-overlay:hover {
+	@include bp(mama-bear) {
+		opacity:1;
+		padding:3em;
+		transition: opacity .6s, padding-top .4s;
+	}
+}
+
+.project-overlay h4, .project-overlay h5 {
+	opacity:1;
+} 
+
+.project-detail {
+
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height: 100%;
+	display:block;
+	padding:11.5em 3em 3em 3em;
+	color:$c-body; 
+
+	@include bp (baby-bear){
+
+		padding:8.5em 3em 3em 3em;
+	}
+
+	@include bp(mama-bear) {
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width:100%;
+		height: 100%;
+		display:block;
+		padding:8.5em 3em 0 3em;
+		color:$c-body;
+	}
+
+}
+.blog {
+
+	background-image: url('../images/goalinvestor_teaser.jpg');
+
+}
+
+
+.blog-bg {
+	
+	background:#0bc391;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+
+.dribbble-shot {
+	background:#ea4c89;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+}
+
+.passion-bg {
+	background:#990000;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+}
+
+.cry {background-image: url('../images/cry.jpg');}
+.jawn {background-image: url('../images/jawn.jpg');}
+.ninja {background-image: url('../images/ninja.jpg');}
+.process {background-image: url('../images/process.jpg');}
+.more {background-image: url('../images/more.png');}
+.photoshop {background-image: url('../images/photoshop.jpg');}
+.laser {background-image: url('../images/laser.jpg');}
+.performance {background-image: url('../images/performance.jpg');}
+.bobs {background-image: url('../images/bobsburg.jpg');}
+.sneakers {background-image: url('../images/sneakers.jpg');}
+.xgames {background-image: url('../images/xgames.jpg');}
+.philadelphia {background-image: url('../images/philadelphia.jpg');}
+
+.goalinvestor{
+	background-image: url('../images/goalinvestor_teaser.jpg');
+}
+
+.goalinvestor-detail {
+	background-image: url('../images/goalinvestor_detail.jpg');
+	background-position:center;
+}
+
+.gi-bg {
+	background:#6b9115;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+}
+
+.cry-detail {
+	background-image: url('../images/cry-detail.jpg');
+}
+.ninja-detail {
+	background-image: url('../images/ninja-detail.jpg');
+}
+.laser-detail {
+	background-image: url('../images/laser-detail.jpg');
+}
+.performance-detail {
+	background-image: url('../images/performance-detail.jpg');
+}
+
+.nugsnet {
+	background-image: url('../images/nugs_teaser.jpg');
+}
+.nugs-bg {
+	background:red;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+}
+
+
+
+.nisl {
+	background-image: url('../images/nisl_teaser.png');
+	background-position:center;
+}
+
+.nisl-detail {
+	background-image: url('../images/nisl-detail.jpg');
+	background-position:center;
+}
+
+.nisl-bg {
+	background:#004a90;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+}
+
+.sherman {
+	background-image: url('../images/sherman_teaser.jpg');
+}
+.sherman-detail {
+	background-image: url('../images/sherman-detail.jpg');
+}
+.sherman-bg {
+	background:#9e0205;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+
+
+.drfirst {
+	background-image: url('../images/drfirst_teaser.jpg');
+	background-position:center;
+}
+.dr-bg {
+	background:#009bd7;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+.bomf {
+	background-image: url('../images/bomf_teaser.jpg');
+}
+.bomf-detail {
+	background-image: url('../images/bomf-detail.jpg');
+}
+.bomf-bg {
+	background:#08114f;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+
+.blta {
+	background-image: url('../images/blta_teaser.jpg');
+}
+.blta-detail {
+	background-image: url('../images/blta-detail.jpg');
+}
+.blta-bg {
+	background:#08114f;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+
+.l2p {
+	background-image: url('../images/l2p_teaser.jpg');
+}
+.l2p-detail {
+	background-image: url('../images/l2p-detail.jpg');
+}
+.l2p-bg {
+	background:#7c8417;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+.evolution {
+	background-image: url('../images/evolution_teaser.jpg');
+}
+.evo-bg {
+	background:#192e8d;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+.evo-detail {
+	background-image: url('../images/evo-detail.jpg');
+}
+.griffin {
+	background-image: url('../images/griffin_teaser.jpg');
+}
+.griffin-detail {
+	background-image: url('../images/griffin-detail.jpg');
+}
+.griffin-bg {
+	background:#c8920d;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+
+}
+
+
+
+.bomf {
+	background-image: url('../images/bomf_teaser.jpg');
+}
+
+
+.forge {
+	background-image: url('../images/forge_teaser.jpg');
+	background-position:center;
+}
+.forge-bg {
+	background:#a6341a;
+	background-size:cover;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:.8;
+	z-index:-999;
+}
+.forge-detail {
+	background-image: url('../images/forge-sidebar.jpg');
+}
+
+.homepage-content, nav{
+	
+	padding: 0 3em;
+	width:100%;
+	float:left;
+}
+
+
+
+.related-overlay{
+	opacity:1;
+	width:100%;
+	height:100%;
+	position:relative;
+	padding:0;
+	padding:.5em 0 0 3em;
+	z-index:999;
+	transition: all .6s;
+
+	@include bp(mama-bear){
+
+		padding:1.4em 0 0 3em;
+
+	}
+}
+
+.related-overlay a:hover{
+	color:#0decaf;
+	transition:.6s;
+}
+
+.related-overlay:hover {
+	opacity:1;
+	transition: opacity 1.2s;
+}
+

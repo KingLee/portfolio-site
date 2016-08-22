@@ -1,0 +1,21 @@
+.logo { 
+	
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	background-size: 80px auto;
+	display:block;
+	height: 117px;
+
+	@include bp(emb-bear) {
+		background-size: 117px auto;
+		}
+
+	@include bp(baby-bear) {
+
+		height:67px;
+		background-size:67px;
+		background-position:3em;
+
+	}
+
+	}

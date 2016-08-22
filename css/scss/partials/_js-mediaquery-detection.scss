@@ -1,0 +1,15 @@
+#js-mediaquery-reference {
+	position: absolute;
+	top: -50px;
+	width: 0;
+	@include transition(width, .001s);
+
+	@include bp(baby-bear) { width: 50px; }
+	@include bp(mama-bear) { width: 100px; }
+
+	&:after { content: "mobile";
+		
+		@include bp(baby-bear) { content: "tablet"; }
+		@include bp(mama-bear) { content: "desktop"; }
+	}
+}

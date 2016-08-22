@@ -1,0 +1,51 @@
+/********************
+** Breakpoints
+********************/
+
+$bp-embryoBear:			360;
+$bp-infBear:			568;
+$bp-babyBear:           768;
+$bp-mamaBear:           1024;
+$bp-papaBear:           1200;
+
+/********************
+** Media Queries
+********************/
+
+$mq-embryoBear:			"only screen and (min-width: #{$bp-embryoBear}px)";
+$mq-infBear:			"only screen and (min-width: #{$bp-infBear}px)";
+$mq-babyBear:			"only screen and (min-width: #{$bp-babyBear}px)";
+$mq-mamaBear: 			"only screen and (min-width: #{$bp-mamaBear}px)";
+$mq-papaBear: 			"only screen and (min-width: #{$bp-papaBear}px)";
+$mq-retinaBear: 		"only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx)";
+
+/********************
+** Fonts
+********************/
+
+$baseFontSize:          16;
+$baseLineHeight:        1.9em;
+
+$f-base:              	"Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+$f-primary:             $f-base;
+
+
+/********************
+** Colors
+********************/
+
+$c-primary:             #454545;
+
+$c-secondary:           #0decaf;
+
+$c-tertiary:            #fff;
+
+$c-body:                #fff;
+$c-base:                #000;
+
+/********************
+** Images
+********************/
+
+$i-filePath:            '../images/';

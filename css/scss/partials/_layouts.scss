@@ -1,0 +1,15 @@
+.l-constrained {
+
+	@include bp(baby-bear) { margin: 0 auto; }
+}
+
+.l-faux-table { display: table; width: 100%; }
+
+.l-right-sidebar { }
+
+.l-left-sidebar { }
+
+.l-centered-content { text-align: center;
+
+    img { margin-left: auto; margin-right: auto; }
+}
