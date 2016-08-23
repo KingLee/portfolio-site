@@ -624,6 +624,111 @@ sub {
 .list-floated li {
   float: left; }
 
+.project-01, .project-02, .project-03, .project-04, .project-05, .project-06, .project-07, .project-08, .project-09{
+  width:100%;
+  height:630px;
+}
+.project-01{
+  background:#252448;
+}
+.project-02{
+  background:#4A61E6;
+}
+.project-03{
+  background:#F1552B;
+}
+.project-04{
+  background:#8e76cb;
+}
+.project-05{
+  background:#177dc5;
+}
+.project-06{
+  background:#1c3a94;
+}
+.project-07{
+  background:#92ce52;
+}
+.project-08{
+  background:#083451;
+}
+.project-09{
+  background:#fd4e2c;
+}
+.homework-container {
+  max-width:1400px;
+  margin:0 auto;
+}
+
+    .home-work {
+      width:100%;
+      max-width:400px;
+      margin:0 auto;
+      padding: 3em 2em 0em 2em;
+    }
+    .home-work p{
+      color:#fff;
+      line-height:1.2;
+    }
+    .home-image {
+      margin: 0 auto;
+      max-width:400px;
+      padding:3em 2em 0 2em;
+    }
+
+
+
+@media only screen and (min-width: 962px) {
+    .project-01, .project-02, .project-03, .project-04, .project-05, .project-06, .project-07, .project-08, .project-09{
+     width:100%;
+     height:700px;
+     }
+
+    .home-work {
+      width:33.333333%;
+      float:left;
+      display:inline-block;
+      padding-top:16em;
+      margin-left: 4em;
+    }
+    .home-work p{
+      color:#fff;
+      line-height:1.2;
+    }
+    .home-image {
+      width:100%;
+      max-width:500px;
+      float:right;
+      display:inline-block;
+      margin-right:4em;
+      padding-top: 6em;
+      padding-left:1em;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .home-work {
+      width:33.333333%;
+      float:left;
+      display:inline-block;
+      padding-top:16em;
+      margin-left: 8em;
+    }
+    .home-work p{
+      color:#fff;
+      line-height:1.2;
+    }
+    .home-image {
+      width:100%;
+      max-width:500px;
+      float:right;
+      display:inline-block;
+      margin-right:8em;
+      padding-top: 6em; 
+      padding-left:1em;
+    }
+}
 .project-list {
   height: 100%;
   background-color: #72cdfd; }
