@@ -626,10 +626,17 @@ sub {
 
 .project-01, .project-02, .project-03, .project-04, .project-05, .project-06, .project-07, .project-08, .project-09{
   width:100%;
-  height:630px;
+  position: relative;
+  float: left;
+  overflow:hidden;
 }
 .project-01{
-  background:#252448;
+  background: #252448; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, #346684, #252448); /* Safari */
+  background: -o-radial-gradient(circle, #346684, #252448); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #346684, #252448); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #346684, #252448); /* Standard syntax */
+
 }
 .project-02{
   background:#4A61E6;
@@ -639,6 +646,11 @@ sub {
 }
 .project-04{
   background:#8e76cb;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-20deg, #8e76cb, #f5a49e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-20deg, #8e76cb, #f5a49e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-20deg, #8e76cb, #f5a49e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-20deg, #8e76cb, #f5a49e); /* Standard syntax */
 }
 .project-05{
   background:#177dc5;
@@ -656,74 +668,112 @@ sub {
   background:#fd4e2c;
 }
 .homework-container {
-  max-width:1400px;
+  padding-top:4em;
+  padding-bottom:5em;
   margin:0 auto;
 }
 
     .home-work {
+      text-align:center;
       width:100%;
       max-width:430px;
       margin:0 auto;
-      padding: 3em 2em 0em 2em;
+      padding-bottom:3em;
+      padding-left:3em;
+      padding-right:3em;
+
     }
     .home-work a{
       color:#72cdfd;
       
     }
     .home-work p{
+      font-size:16px;
       color:rgba(255,255,255,0.7);
       line-height:1.2;
+      padding-bottom:18px;
     }
     .home-image {
       margin: 0 auto;
       max-width:400px;
-      padding:3em 2em 0 2em;
+      padding:0 2em 0 2em;
+    }
+    .home-image-medium {
+      margin: 0 auto;
+      max-width:400px;
+      padding:0 2em 0 2em;
     }
     .home-image-full {
       width:100%;
-      max-width:800px;
       min-width:650px;
-      padding-top: 3em; 
+      max-width:800px;
+      overflow:hidden;
       padding-right:2em;
       padding-left:2em;
       margin: 0 auto;
     }
-
-
-
-@media only screen and (min-width: 962px) {
+@media only screen and (min-width: 600px) {
+    .home-image {
+      padding:0;
+    }
+    .home-image-medium {
+      padding:0;
+    }
+}
+@media only screen and (min-width: 982px) {
+    .homework-container {
+      max-width:1100px;
+      padding-top:10em;
+      padding-bottom:10em;
+      margin:0 auto;
+      min-height:650px;
+    }
     .project-01, .project-02, .project-03, .project-04, .project-05, .project-06, .project-07, .project-08, .project-09{
      width:100%;
-     height:700px;
      }
 
     .home-work {
-      width:33.333333%;
+      text-align:left;
+      width:40%;
       max-width:none;
       float:left;
       display:inline-block;
-      padding-top:16em;
-      margin-left: 4em;
+      padding-left: 2em;
+      padding-top:5em;
+      margin-left:3em;
     }
     .home-image {
       width:100%;
       max-width:500px;
-      float:right;
+      padding:0 2em 0 2em;
+      margin-top:-3em;
+      float:left;
       display:inline-block;
-      margin-right:4em;
-      padding-top: 6em;
-      padding-left:1em;
+      overflow:hidden;
+      margin-left:2em;
+
+    }
+    .home-image-medium {
+      width:100%;
+      max-width:500px;
+      padding:0 2em 0 2em;
+      margin-top:-5em;
+      float:left;
+      display:inline-block;
+      overflow:hidden;
+      margin-left:2em;
+
     }
     .home-image-full {
       width:100%;
       max-width:900px;
-      float:right;
+      float:left;
       display:inline-block;
-      padding-top: 8em; 
       padding-right:4em;
       position:absolute;
       overflow:hidden;
-      margin-left:10%;
+      margin-left:2em;
+      margin-top:-3em
     }
 
 }
@@ -731,32 +781,39 @@ sub {
 
 @media only screen and (min-width: 1200px) {
     .home-work {
-      width:33.333333%;
-
+      width:40%;
       float:left;
       display:inline-block;
-      padding-top:16em;
-      margin-left: 6em;
+      padding-left: 3em;
+      padding-top:5em;
+      margin-left:3em;
     }
 
     .home-image {
       width:100%;
       max-width:500px;
-      float:right;
+      float:left;
       display:inline-block;
-      margin-right:6em;
-      padding-top: 6em; 
-      padding-left:1em;
+      overflow:hidden;
+      
+    }
+    .home-image-medium {
+      width:100%;
+      max-width:500px;
+      float:left;
+      display:inline-block;
+      overflow:hidden;
+      
     }
     .home-image-full {
       width:100%;
       max-width:900px;
-      float:right;
+      float:left;
       display:inline-block;
-      padding-top: 8em; 
       padding-right:4em;
       overflow:hidden;
-      margin-left:10%;
+      margin-left:2em;
+      margin-top:-3em
     }
 }
 .project-list {
@@ -1110,10 +1167,10 @@ sub {
 
 .comcast-detail {
     background: #212c40; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#346684, #212c40); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#346684, #212c40); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#346684, #212c40); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#346684, #212c40); /* Standard syntax */ ;
+    background: -webkit-linear-gradient(#346684, #252448); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#346684, #252448); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#346684, #252448); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#346684, #252448); /* Standard syntax */ ;
 }
 
 .comcast-bg {
