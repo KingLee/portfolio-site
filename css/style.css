@@ -662,18 +662,31 @@ sub {
 
     .home-work {
       width:100%;
-      max-width:400px;
+      max-width:430px;
       margin:0 auto;
       padding: 3em 2em 0em 2em;
     }
+    .home-work a{
+      color:#72cdfd;
+      
+    }
     .home-work p{
-      color:#fff;
+      color:rgba(255,255,255,0.7);
       line-height:1.2;
     }
     .home-image {
       margin: 0 auto;
       max-width:400px;
       padding:3em 2em 0 2em;
+    }
+    .home-image-full {
+      width:100%;
+      max-width:800px;
+      min-width:650px;
+      padding-top: 3em; 
+      padding-right:2em;
+      padding-left:2em;
+      margin: 0 auto;
     }
 
 
@@ -686,14 +699,11 @@ sub {
 
     .home-work {
       width:33.333333%;
+      max-width:none;
       float:left;
       display:inline-block;
       padding-top:16em;
       margin-left: 4em;
-    }
-    .home-work p{
-      color:#fff;
-      line-height:1.2;
     }
     .home-image {
       width:100%;
@@ -704,29 +714,49 @@ sub {
       padding-top: 6em;
       padding-left:1em;
     }
+    .home-image-full {
+      width:100%;
+      max-width:900px;
+      float:right;
+      display:inline-block;
+      padding-top: 8em; 
+      padding-right:4em;
+      position:absolute;
+      overflow:hidden;
+      margin-left:10%;
+    }
+
 }
 
 
 @media only screen and (min-width: 1200px) {
     .home-work {
       width:33.333333%;
+
       float:left;
       display:inline-block;
       padding-top:16em;
-      margin-left: 8em;
+      margin-left: 6em;
     }
-    .home-work p{
-      color:#fff;
-      line-height:1.2;
-    }
+
     .home-image {
       width:100%;
       max-width:500px;
       float:right;
       display:inline-block;
-      margin-right:8em;
+      margin-right:6em;
       padding-top: 6em; 
       padding-left:1em;
+    }
+    .home-image-full {
+      width:100%;
+      max-width:900px;
+      float:right;
+      display:inline-block;
+      padding-top: 8em; 
+      padding-right:4em;
+      overflow:hidden;
+      margin-left:10%;
     }
 }
 .project-list {
@@ -1578,7 +1608,7 @@ hr {
   min-height: 800px; }
 
 li a.active {
-  color: #d9d9d9;
+  color: #bbb;
   border-bottom: 4px solid #72cdfd;
   padding-bottom:19px;
    }
