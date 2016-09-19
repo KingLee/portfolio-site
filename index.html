@@ -64,24 +64,18 @@
   ga('send', 'pageview');
 
 </script>
-	<script>
-		$(document).ready(function() {
-		  	var projectWrapperHeight = $(window).height() - $(".header-wrapper").height();
- 			$( ".body-container" ).height(projectWrapperHeight);
 
-	 	});
-	</script>
 </head>
 <body>
 
-	<div class="header-wrapper cf">
-		<header class="g-full cf">
+	<header class="header-wrapper-fixed cf">
+		<div class="g-full cf">
 			<a href="index.html"><div class="logo g-third">
 
 			</div></a>
 			<nav class="g-two-thirds">
 				<ul class="navigation">
-					<li> <a href="#" class="active"> Work </a> </li>
+					<li> <a href="#" class="active">Work </a> </li>
 					<li> <a href="writing.html"> Writing </a> </li>
 				</ul>
 				<ul class="social">
@@ -90,7 +84,9 @@
 					<a href="https://www.linkedin.com/profile/view?id=102494274"> <li class="linkedin"></li> </a>
 				</ul>
 			</nav>
-		</header>
+		</div>
+		<hr>
+	</header>
 
 		<hr class="top-line">
 			
@@ -102,126 +98,86 @@
 				<h1>Hi, I'm Andrew Lee, and I design digital products in New York City.</h1>
 			</div>
 		</div>
-
 		<hr>
-
 	</div>
-
 	<main>
 		
 		
 		<div class="body-container g-full cf">
-			<div class="left-content g-third">
-				<ul class="c-body g-full project-list no-bottom-margin">
-					
-					<a href="comcast.html"> 
-						<li class="project comcast">
-							<div class="project-overlay cf">
-								<h3 class="c-body">XFINITY Internet v1.0</h3>
-								<h4 class="bottom-margin">Client Work</h4>
-								<p class="white">Manage your home network from anywhere.</p>
-								<div class="bg-fill comcast-bg"></div>
-							</div>
-						</li>
-					</a>
-
-					<a href="nisl.html" class="white"> 
-						<li class="project nisl">
-								<div class="project-overlay cf">
-									<h3 class="c-body">NISL</h3>
-									<h4 class="bottom-margin">Client Work</h4>
-									<p class="white">NISL gets a new site design to show the breadth of their academic services. </p>
-									<div class="bg-fill nisl-bg"></div>
-								</div>
-							</li> 
-					</a>
-
-					<a href="goalinvestor.html" class="white"> 
-						<li class="project goalinvestor">
-							<div class="project-overlay cf">
-								<h3 class="c-body">Goal Investor</h3>
-								<h4 class="bottom-margin">Client Work</h4>
-								<p class="white">Goal Investor takes a goal based approach to investing with a friendly interface.</p>
-								<div class="bg-fill gi-bg"></div>
-							</div>
-						</li> 
-					</a>
-				</ul>
+			<div class="project-01">
+				<div class="homework-container">
+					<div class="home-work">
+						<h2 class="c-body">XFINITY Internet</h2>
+						<p>Cloud enabled router settings allow you to manage your home WiFi network from anywhere.</p>
+						<a class="button-comcast" href="comcast.html">View Project</a>
+					</div>
+					<a href="comcast.html"><div class="home-image-full">
+						<img src="images/xfinity-test.png" />
+					</div></a>
+				</div>
 			</div>
-			<div class="left-content g-third">
-				<ul class="c-body g-full project-list no-bottom-margin">
-				
-				<a href="forge.html"> 
-						<li class="project forge">
-							<div class="project-overlay cf">
-								<h3 class="c-body">Forge Conference</h3>
-								<h4 class="bottom-margin">Passion Project</h4>
-								<p class="white">The creation of a major design and UX focused web conference for Philadelphia.</p>
-								<div class="bg-fill forge-bg"></div>
-							</div>
-						</li>
-					</a>
-
-					<a href="griffin.html" class="white"> 
-						<li class="project griffin">
-							<div class="project-overlay cf">
-								<h3 class="c-body">The Griffin</h3>
-								<h4 class="bottom-margin">Client Work</h4>
-								<p class="white">This portable fall protection product gets a mobile sales tool filled with fun interactions.</p>
-								<div class="bg-fill griffin-bg"></div>
-							</div>
-						</li> 
-					</a>
-
-					<a href="bomf.html"> 
-						<li class="project bomf">
-							<div class="project-overlay cf">
-								<h3 class="c-body">Back On My Feet</h3>
-								<h4 class="bottom-margin">Client Work</h4>
-								<p class="white">Helping a national non-profit run away with their web experience.</p>
-								<div class="bg-fill bomf-bg"></div>
-							</div>
-						</li>
-					</a>
-					
-				</ul>
+			<div class="project-04">
+				<div class="homework-container">
+					<div class="home-work">
+						<h2 class="c-body">DailyUI</h2>
+						<p>50 quick examples of UI and idea exploration posted to Dribbble.</p>
+						<a class="button-dailyui" href="dailyui.html">View Project</a>
+					</div>
+					<a href="dailyui.html"><div class="home-image-full">
+						<img src="images/dailyui-homework.png" />
+					</div></a>
+				</div>
 			</div>
-			<div class="left-content g-third">
-				<ul class="c-body g-full project-list no-bottom-margin">
-					
-					<a href="dailyui.html">
-						<li class="project dailyui">
-							<div class="project-overlay cf">
-								<h3 class="c-body">Daily UI</h3>
-								<h4 class="bottom-margin">Passion Project</h4>
-								<p class="white">I took on a few UI Challenges</p>
-								<div class="bg-fill dailyui-bg"></div>
-							</div>
-						</li>
-					</a>
-
-					<a href="evo.html"> 
-						<li class="project evolution">
-							<div class="project-overlay cf">
-								<h3 class="c-body">Evolution of Social Collaboration</h3>
-								<h4 class="bottom-margin">Client Work</h4>
-								<p class="white">A fun and educational microsite for Autodesk360 with a bunch animations.</p>
-								<div class="bg-fill evo-bg"></div>
-							</div>
-						</li>
-					</a>
-					<a href="sherman.html"> 
-						<li class="project sherman">
-							<div class="project-overlay cf">
-								<h3 class="c-body">According to Sherman</h3>
-								<h4 class="bottom-margin">Client Work</h4>
-								<p class="white">The most fun dog blog gets one of the most fun tumblr themes.</p>
-								<div class="bg-fill sherman-bg"></div>
-							</div>
-						</li>
-					</a>
-				</ul>
+			<div class="project-02">
+				<div class="homework-container">
+					<div class="home-work">
+						<h2 class="c-body">FitCharts</h2>
+						<p>A fitness app that takes gaming concepts and puts them to good use.</p>
+						<a class="button-fitchart" href="fitcharts.html">View Project</a>
+					</div>
+					<a href="fitcharts.html"><div class="home-image">
+						<img src="images/fitness-app-homepage.png" />
+					</div></a>
+				</div>
 			</div>
+			<div class="project-03">
+				<div class="homework-container">
+					<div class="home-work">
+						<h2 class="c-body">Forge Conference</h2>
+						<p> The creation of a Philadelphia's leading design and UX focused conference.</p>
+						<a class="button-forge" href="forge.html">View Project</a>
+
+					</div>
+					<a href="forge.html"><div class="home-image-medium">
+						<img src="images/forge-homework-02.png" />
+					</div></a>
+				</div>
+			</div>
+			<div class="project-07">
+				<div class="homework-container">
+					<div class="home-work">
+						<h2 class="c-body">Goal Investor</h2>
+						<p class="light">A digital tool to educate people about their financial goals.</p>
+						<a class="button-sei" href="goalinvestor.html">View Project</a>
+					</div>
+					<a href="goalinvestor.html"><div class="home-image-full">
+						<img src="images/sei-homework.png" />
+					</div></a>
+				</div>
+			</div>
+			<div class="project-08">
+				<div class="homework-container">
+					<div class="home-work">
+						<h2 class="c-body">Back On My Feet</h2>
+						<p>I helped create a national network of sites for a non-profit, homeless support organization.</p>
+						<a class="button-bomf" href="bomf.html">View Project</a>
+					</div>
+					<a href="bomf.html"><div class="home-image-full">
+						<img src="images/bomf-homework.png" />
+					</div></a>
+				</div>
+			</div>
+		</div>
 
 	</main>
 

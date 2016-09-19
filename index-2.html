@@ -39,9 +39,7 @@
     <link rel="shortcut icon" href="images/touch/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="http://bythegrid.com/favicon.ico" />
 
-
     <link rel="canonical" href="">
-
 
     <!-- Stylesheets -->
 	<link rel="stylesheet" href="css/style.css" />
@@ -66,18 +64,25 @@
   ga('send', 'pageview');
 
 </script>
+	<script>
+		$(document).ready(function() {
+		  	var projectWrapperHeight = $(window).height() - $(".header-wrapper").height();
+ 			$( ".body-container" ).height(projectWrapperHeight);
+
+	 	});
+	</script>
 </head>
 <body>
 
-	<header class="header-wrapper-fixed cf">
-		<div class="g-full cf">
+	<div class="header-wrapper cf">
+		<header class="g-full cf">
 			<a href="index.html"><div class="logo g-third">
 
 			</div></a>
 			<nav class="g-two-thirds">
 				<ul class="navigation">
-					<li> <a href="index.html"> Work </a> </li>
-					<li> <a href="#" class="active"> Writing </a> </li>
+					<li> <a href="#" class="active"> Work </a> </li>
+					<li> <a href="writing.html"> Writing </a> </li>
 				</ul>
 				<ul class="social">
 					<a href="http://www.twitter.com/leevw"> <li class="twitter"></li> </a>
@@ -85,18 +90,16 @@
 					<a href="https://www.linkedin.com/profile/view?id=102494274"> <li class="linkedin"></li> </a>
 				</ul>
 			</nav>
-		</div>
-		<hr>
-	</header>
+		</header>
 
 		<hr class="top-line">
 			
-		<div class="intro-wrapper g-full bottom-margin">
+		<div class="intro-wrapper g-full bottom-margin-double">
 			<div class="intro-image">
 
 			</div>
 			<div class="intro-text">
-				<h1>I dont write often, but here's what I have to say.</h1>
+				<h1>Hi, I'm Andrew Lee, and I design digital products in New York City.</h1>
 			</div>
 		</div>
 
@@ -110,78 +113,116 @@
 		<div class="body-container g-full cf">
 			<div class="left-content g-third">
 				<ul class="c-body g-full project-list no-bottom-margin">
-					<a href="why-the-internet-cant-make-me-cry.html" class="white"> 
-					<li class="project blog cry">
-						<div class="project-overlay cf">
-							<h3 class="c-body">Why The Internet Can't Make Me Cry</h3>
-							<h4 class="bottom-margin">Blog Post</h4>
-							<p class="white">Thoughts on the maturity of the web.</p>
-							<div class="bg-fill blog-bg"></div>
-						</div>
-					</li> </a>
-					<a href="laser-focus-for-your-website.html"> 
-						<li class="project laser">
+					
+					<a href="comcast.html"> 
+						<li class="project comcast">
 							<div class="project-overlay cf">
-								<h3 class="c-body">Laser Focus For Your Website</h3>
-								<h4 class="bottom-margin">Blog Post</h4>
-								<p class="white">"This is not the content that works for you."</p>
-								<div class="bg-fill blog-bg"></div>
+								<h3 class="c-body">XFINITY Internet v1.0</h3>
+								<h4 class="bottom-margin">Client Work</h4>
+								<p class="white">Manage your home network from anywhere.</p>
+								<div class="bg-fill comcast-bg"></div>
 							</div>
 						</li>
 					</a>
 
-				</ul>
-			</div>
-			<div class="left-content g-third">
-				<ul class="c-body g-full project-list no-bottom-margin">
-					<a href="design-process-habits.html" class="white"> 
-					<li class="project process">
-						<div class="project-overlay cf">
-							<h3 class="c-body">Designers, Change Your Process Often</h3>
-							<h4 class="bottom-margin">Blog Post</h4>
-							<p class="white">Advice for avoiding design ruts.</p>
-							<div class="bg-fill blog-bg"></div>
-						</div>
-					</li> </a>
-					<a href="photoshop-workflow.html" class="white"> 
-					<li class="project photoshop">
-						<div class="project-overlay cf">
-							<h3 class="c-body">My Favorite Photoshop Workflow Helpers</h3>
-							<h4 class="bottom-margin">Blog Post</h4>
-							<p class="white">Welcome to working faster.</p>
-							<div class="bg-fill blog-bg"></div>
-						</div>
-					</li> </a>
-					<li class="project more hide">
+					<a href="nisl.html" class="white"> 
+						<li class="project nisl">
+								<div class="project-overlay cf">
+									<h3 class="c-body">NISL</h3>
+									<h4 class="bottom-margin">Client Work</h4>
+									<p class="white">NISL gets a new site design to show the breadth of their academic services. </p>
+									<div class="bg-fill nisl-bg"></div>
+								</div>
+							</li> 
+					</a>
 
-					</li>
-
-				</ul>
-			</div>
-			<div class="left-content g-third">
-				<ul class="c-body g-full project-list no-bottom-margin">
-					<a href="psd-ninja.html" class="white"> 
-					<li class="project ninja">
-						<div class="project-overlay cf">
-							<h3 class="c-body">Using Photoshop Like a Ninja: Modular PSDs</h3>
-							<h4 class="bottom-margin">Blog Post</h4>
-							<p class="white">Slicing and dicing Photoshop docs.</p>
-							<div class="bg-fill blog-bg"></div>
-						</div>
-					</li> </a>
-
-					<a href="design-decisions-and-performance.html"> 
-						<li class="project performance">
+					<a href="goalinvestor.html" class="white"> 
+						<li class="project goalinvestor">
 							<div class="project-overlay cf">
-								<h3 class="c-body">How Design Decisions Impact Performance</h3>
-								<h4 class="bottom-margin">Blog Post</h4>
-								<p class="white">Keep it simple, keep it light.</p>
-								<div class="bg-fill blog-bg"></div>
+								<h3 class="c-body">Goal Investor</h3>
+								<h4 class="bottom-margin">Client Work</h4>
+								<p class="white">Goal Investor takes a goal based approach to investing with a friendly interface.</p>
+								<div class="bg-fill gi-bg"></div>
+							</div>
+						</li> 
+					</a>
+				</ul>
+			</div>
+			<div class="left-content g-third">
+				<ul class="c-body g-full project-list no-bottom-margin">
+				
+				<a href="forge.html"> 
+						<li class="project forge">
+							<div class="project-overlay cf">
+								<h3 class="c-body">Forge Conference</h3>
+								<h4 class="bottom-margin">Passion Project</h4>
+								<p class="white">The creation of a major design and UX focused web conference for Philadelphia.</p>
+								<div class="bg-fill forge-bg"></div>
+							</div>
+						</li>
+					</a>
+
+					<a href="griffin.html" class="white"> 
+						<li class="project griffin">
+							<div class="project-overlay cf">
+								<h3 class="c-body">The Griffin</h3>
+								<h4 class="bottom-margin">Client Work</h4>
+								<p class="white">This portable fall protection product gets a mobile sales tool filled with fun interactions.</p>
+								<div class="bg-fill griffin-bg"></div>
+							</div>
+						</li> 
+					</a>
+
+					<a href="bomf.html"> 
+						<li class="project bomf">
+							<div class="project-overlay cf">
+								<h3 class="c-body">Back On My Feet</h3>
+								<h4 class="bottom-margin">Client Work</h4>
+								<p class="white">Helping a national non-profit run away with their web experience.</p>
+								<div class="bg-fill bomf-bg"></div>
+							</div>
+						</li>
+					</a>
+					
+				</ul>
+			</div>
+			<div class="left-content g-third">
+				<ul class="c-body g-full project-list no-bottom-margin">
+					
+					<a href="dailyui.html">
+						<li class="project dailyui">
+							<div class="project-overlay cf">
+								<h3 class="c-body">Daily UI</h3>
+								<h4 class="bottom-margin">Passion Project</h4>
+								<p class="white">I took on a few UI Challenges</p>
+								<div class="bg-fill dailyui-bg"></div>
+							</div>
+						</li>
+					</a>
+
+					<a href="evo.html"> 
+						<li class="project evolution">
+							<div class="project-overlay cf">
+								<h3 class="c-body">Evolution of Social Collaboration</h3>
+								<h4 class="bottom-margin">Client Work</h4>
+								<p class="white">A fun and educational microsite for Autodesk360 with a bunch animations.</p>
+								<div class="bg-fill evo-bg"></div>
+							</div>
+						</li>
+					</a>
+					<a href="sherman.html"> 
+						<li class="project sherman">
+							<div class="project-overlay cf">
+								<h3 class="c-body">According to Sherman</h3>
+								<h4 class="bottom-margin">Client Work</h4>
+								<p class="white">The most fun dog blog gets one of the most fun tumblr themes.</p>
+								<div class="bg-fill sherman-bg"></div>
 							</div>
 						</li>
 					</a>
 				</ul>
 			</div>
+
 	</main>
 
 	<div id="js-mediaquery-reference"></div>
