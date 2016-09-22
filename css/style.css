@@ -498,7 +498,7 @@ h3, .h3 {
   color: #454545; }
 
 h4, .h4 {
-  font-style: italic;
+  font-weight: 200;
   font-size: 1em; }
   @media only screen and (min-width: 768px) {
     h4, .h4 {
@@ -539,15 +539,17 @@ a:active p {
   transition: .2s; }
 
 h6 a {
+  font-style: italic;
   text-decoration: underline;
-  color: rgba(0,0,0,.4); }
+  color: rgba(255,255,255,1); }
 
 h6 a:visited {
   text-decoration: underline;
-  color: rgba(0,0,0,.4);  }
+  color: rgba(255,255,255,1);  }
 
 h6 a:hover{
-  color: #72cdfd; 
+  font-style:none;
+  color: rgba(255,255,255,.8);
   text-decoration: underline;
   transition: .4s; }
 
