@@ -23,7 +23,7 @@ function resetStyles()
 
 /********************
 ** Window Resize Manager
-** (based on: http://seesparkbox.com/demos/css-content-check/index.html)
+** (based on: http://seesparkbox.com/demos/css-content-check//)
 ********************/
 
 //Create an event checker function that grabs the current value of the after pseudo class of the #mediaquery <div>

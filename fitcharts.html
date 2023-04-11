@@ -69,16 +69,15 @@
 
 	<header class="header-wrapper-fixed cf">
 		<div class="g-full cf">
-			<a href="index.html"><div class="logo g-third">
+			<a href="/"><div class="logo g-third">
 
 			</div></a>
 			<nav class="g-two-thirds">
 				<ul class="navigation">
-					<li> <a href="index.html"> Work </a> </li>
-					<li> <a href="writing.html"> Writing </a> </li>
+					<li> <a href="/"> Work </a> </li>
+					<li> <a href="images/AndrewLee-Resume2019.pdf"> Resumé </a> </li>
 				</ul>
 				<ul class="social">
-					<a href="http://www.twitter.com/leevw"> <li class="twitter"></li> </a>
 					<a href="http://www.dribbble.com/leevw"> <li class="dribbble"></li> </a>
 					<a href="https://www.linkedin.com/in/andrew-lee-9963a92a"> <li class="linkedin"></li> </a>
 				</ul>
@@ -92,26 +91,31 @@
 	<main>
 		<div class="container g-full cf">
 			<div class="left-content-detail g-quarter">
+				<div class="made-by">
+					<img class="inline margin-right" src="images/left-heart.svg" />
+					<p class="made-by-text">This portfolio was built by me</p>
+					<img class="inline end-heart" src="images/right-heart.svg" />
+				</div>
 				<ul class="c-body g-full height no-bottom-margin">
 					<li class="project-detail fitcharts-detail">
 						<h3 class="c-body">FitCharts</h3>
 						<h6 class="minidesc">An exploration of Material Design in a fitness app.</h6>
 
 						<div class="wrapper-type bottom-margin-work">
-							<img class="inline" style="width:34px" src="images/ux-icon.png" />
+							<img class="inline" style="width:34px" src="images/ui-icon.png" />
 							<h4 class="bottom-margin">User Experience</h4>
 						</div>
 						<div class="wrapper-type bottom-margin-work">
-							<img class="inline" style="width:34px" src="images/ui-icon.png" />
+							<img class="inline" style="width:34px" src="images/ux-icon.png" />
 							<h4 class="bottom-margin">User Interface</h4>
 						</div>
 					</li>
 				</ul>
 				<div class="related-prev first g-half ">
 				<div class="related-overlay">
-					<a href="dailyui.html">
+					<a href="forge.html">
 						<h5>Previous</h5>
-						<h4 class="pagination">DailyUI</h4>
+						<h4 class="pagination">Forge Conference</h4>
 					</a>
 					<div class="bg-fill"></div>
 				</div>
@@ -119,9 +123,9 @@
 				</div>
 				<div class="related-prev second  g-half ">
 					<div class="related-overlay">
-						<a href="forge.html">
+						<a href="dailyui.html">
 							<h5>Next</h5>
-							<h4 class="pagination">Forge Conference</h4>
+							<h4 class="pagination">DailyUI</h4>
 						</a>
 						<div class="bg-fill"></div>
 					</div>
@@ -129,23 +133,23 @@
 			</div>
 
 			<div class="right-content-detail g-two-thirds">
-				<img class="logo-intro" src="images/fitcharts-logo.png" style="width:200px;"/>
+				<img class="logo-intro" src="images/fitcharts-logo.png" style="width:200px; margin-bottom:2em;"/>
 				<div class="text-container">
-					<h2 class="center">Shadow workouts and measurable progress.</h2>
+					<h4 class="center bottom-margin-double">"Shadowing" but for effort</h4>
 					<p> 
-						In any of my hobbies, one thing I love to see is measurable progress. Some of my hobbies do this really well, such as video games. Some of my hobbies can be a bit more ambiguous, such as fitness. Racing games have this concept called "shadowing" where you can see  your prior lap around a course, as an transparent version of yourself. I decided to try and take this concept an apply it to a fitness tracking app. 
+						In any of my hobbies, one thing I love to see is measurable progress. Racing games have this concept called "shadowing" where you can see your car drive the prior lap around a course as a transparent overlay. Your goal is to beat your shadow around the track. I decided to try and take this concept an apply it to a fitness tracking app. 
 					</p>
 				</div>
 				<div class="text-container">
-					<h2>Fitcharts, as an exercise.</h2>
+					<h2>A material exercise</h2>
 					<p> 
-						Pun very much intended. This project was a personal project to flex Material Design muscles and explore this concept of shadow workouts. As such, I was more worried with navigation and interaction patterns, and the core of the workout experience. The naming and logo was done in ~30-40 minutes and was not the focus of this exercise.
+						Pun very much intended. This project was a personal project to flex Material Design muscles and explore this concept of shadow workouts. I was focused on navigation and interaction patterns, and the core of the workout experience.
 				</div>
 					<img src="images/fitcharts1.jpg" class="image-container bottom-margin-double" />
 				<div class="text-container">
 				<h2>Measuring Effort</h2>
 					<p>
-						Notice that this app experience revolves around a heart rate monitor being connected. The app records your workout by a "percentage of effort". Effort is determined by some pretty basic indicators of fitness such as age, height, weight, resting heart rate and gender to get a baseline VO2 max. Once the VO2 max has been calculated, we put it on a scale that correlates to your heartrate. When you run, lift, and are otherwise active during a workout, your heartrate gives you an indication of how much effort you are putting in. In this way, workout data is on a level playing field from person to person, giving you truely comparable data points.
+						This app experience revolves around a heart rate monitor being connected, kinda like a class at Orange Theory. The app records your workout by a "percentage of effort". Effort is determined by some pretty basic indicators of fitness such as age, height, weight, and resting heart rate to get a baseline VO2 max. Once the VO2 max has been calculated, we put it on a scale that correlates to your heartrate. When you run, lift, and are otherwise active during a workout, your heartrate gives you an relative measure of how much effort you are putting in.
 					</p>
 
 				</div>
@@ -154,14 +158,13 @@
 				<div class="text-container">
 				<h2>The Workout Experience</h2>
 					<p>
-						While you are working out, you are able to see your effort from a past workout along a timeline. We take your live data and lay it on top of the prior workout's data. In this way, you can see when you will need big pushes of effort to keep up, and you can pick out weak spots that are coming up that you may want to capitalize on. Displaying workout data in this way gives measurable progress across a 60+ minute workout that lets you continually push yourself to be better.
+						While you are working out, you are able to see your effort from a past workout along a timeline. I took the live data and laid it on top of the prior workout's data. In this way, you can see when you will need big pushes of effort to keep up, and you can pick out weak spots in the "shadow" that you may want to capitalize on. Displaying effort in this way gives in-the-moment inspiration and continually pushes you to be better over the course of the whole workout.
 					</p>
 				</div>
 				<img src="images/fitcharts3.jpg" class="image-container"/>
 
 				<h1 class="ending center"> <div class="ending-image">
-				</div>
-				Like this project?<br />Consider following me on <a href="http://www.twitter.com/LeeVW">Twitter</a> or <a href="http://www.dribbble.com/Leevw">Dribbble</a>. </h1>
+				</div>Thanks for reading. Check out my <a href="http://www.dribbble.com/leevw">Dribbble</a> or connect with me on <a href="https://www.linkedin.com/in/andrew-lee-9963a92a">LinkedIn</a>. </h1>
 			</div>
 		</div>
 

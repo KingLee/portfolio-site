@@ -69,16 +69,15 @@
 
 	<header class="header-wrapper-fixed cf">
 		<div class="g-full cf">
-			<a href="index.html"><div class="logo g-third">
+			<a href="/"><div class="logo g-third">
 
 			</div></a>
 			<nav class="g-two-thirds">
 				<ul class="navigation">
-					<li> <a href="index.html"> Work </a> </li>
-					<li> <a href="writing.html"> Writing </a> </li>
+					<li> <a href="/"> Work </a> </li>
+					<li> <a href="images/AndrewLee-Resume2019.pdf"> Resumé </a> </li>
 				</ul>
 				<ul class="social">
-					<a href="http://www.twitter.com/leevw"> <li class="twitter"></li> </a>
 					<a href="http://www.dribbble.com/leevw"> <li class="dribbble"></li> </a>
 					<a href="https://www.linkedin.com/in/andrew-lee-9963a92a"> <li class="linkedin"></li> </a>
 				</ul>
@@ -90,17 +89,22 @@
 	<main>
 		<div class="container g-full cf">
 			<div class="left-content-detail g-quarter">
+				<div class="made-by">
+					<img class="inline margin-right" src="images/left-heart.svg" />
+					<p class="made-by-text">This portfolio was built by me</p>
+					<img class="inline end-heart" src="images/right-heart.svg" />
+				</div>
 				<ul class="c-body g-full height no-bottom-margin">
 					<li class="project-detail comcast-detail">
-						<h3 class="c-body">XFINITY Internet</h3>
-						<h6 class="minidesc">This site is still in trial. To see if you have access, try <a href="http://internet.xfinity.com" class="link-border">internet.xfinity.com.</a></h6>
+						<h3 class="c-body">xfinity xFi - v.1</h3>
+						<h6 class="minidesc"><a href="http://internet.xfinity.com" class="link-border">internet.xfinity.com.</a></h6>
 
 						<div class="wrapper-type bottom-margin-work">
-							<img class="inline" style="width:34px" src="images/ux-icon.png" />
+							<img class="inline" style="width:34px" src="images/ui-icon.png" />
 							<h4 class="bottom-margin">User Experience</h4>
 						</div>
 						<div class="wrapper-type bottom-margin-work">
-							<img class="inline" style="width:34px" src="images/ui-icon.png" />
+							<img class="inline" style="width:34px" src="images/ux-icon.png" />
 							<h4 class="bottom-margin">User Interface</h4>
 						</div>
 						<div class="wrapper-type">
@@ -111,9 +115,9 @@
 				</ul>
 				<div class="related-prev first g-half ">
 				<div class="related-overlay">
-					<a href="bomf.html">
+					<a href="masterpassSDK.html">
 						<h5>Previous</h5>
-						<h4 class="pagination">Back On My Feet</h4>
+						<h4 class="pagination">Masterpass SDK</h4>
 					</a>
 					<div class="bg-fill"></div>
 				</div>
@@ -121,9 +125,9 @@
 				</div>
 				<div class="related-prev second  g-half ">
 					<div class="related-overlay">
-						<a href="dailyui.html">
+						<a href="forge.html">
 							<h5>Next</h5>
-							<h4 class="pagination">DailyUI</h4>
+							<h4 class="pagination">Forge Conference</h4>
 						</a>
 						<div class="bg-fill"></div>
 					</div>
@@ -131,54 +135,47 @@
 			</div>
 
 			<div class="right-content-detail g-two-thirds">
-				<img class="logo-intro" src="images/comcast_logo.png" style="width:230px;"/>
+				<img class="logo-intro" src="images/comcast_logo.png" style="width:230px; margin-bottom:2em;"/>
 				<div class="text-container">
-					<h2 class="center">Simple, cloud-enabled router settings.</h2>
-					<h4 class="center bottom-margin-double">A project while working with Comcast Cable</h4>
+					<h4 class="center bottom-margin-double">Cloud-enabled router settings make securing your WiFi easy.</h4>
 					<p> 
-						XFINITY Internet is a responsive web service for customers to access and control their home WiFi networks from any browser enabled device. There are ~3 million gateways that have this service enabled, and more are being added weekly.
+						For a year and a half I worked on the beta of "Xfinity Internet" now known as xFi. Xfinity xFi is a responsive web portal and mobile app for customers to view and control their home WiFi networks from anywhere.
+					</p>
+					<p>
+						I worked on this project creating user flows, new features, UI design, and helping development teams implement.
 					</p>
 				</div>
-					<img src="images/comcast-mobile-01.jpg" class="bottom-margin-double image-container"/>
 				<div class="text-container">
-					<h2>Planning components first.</h2>
+					<h3>Planning components early</h3>
 					<p> 
-						When thinking about a large scale service, there has to be a consolidation of design patterns that can be reusued in multiple instances. In this case, we thought about what similar types of data and actions we had throughout the service and developed modules around those. We came up with a few basic ones:
+						I jumped into the project and there was already <i>some</i> structure in place. What was bogging down the designs was inconsistencies in how we presented the main functions of the product. There had to be a consolidation of design patterns that could be reusued in multiple instances. In this case, we thought about what common interactions would span multiple areas of the product and developed components around those. We came up with a a few key objects and actions that are commonly accessible:
 					</p>
 				</div>
 					<img src="images/comcast-modules-01.jpg" class="bottom-margin-double image-container"/>
 				<div class="text-container">
-					<h2>Setting a consistent interaction pattern.</h2>
+					<h3>Setting consistent interaction patterns</h3>
 					<p> 
-						We attempted to establish a consistent conceptual pattern for the user when they are changing a setting. The design was influenced by the limitation of the API calls to the gateway itself, so we decided to limit user interaction to a single "grouping" of settings through a dialog box, preventing a user from making changes to multiple "groups" of settings.
+						Routers have a lot of settings. Some are complex, some are simple, but all of them need desgin help. The design accounted for the restriction of the API calls to the gateway itself, limiting user interaction to a single grouping of settings through a modal. This helped improved clarity and honed focus on the tasks the user was trying to accomplish.
 					</p>
 				</div>
 				<img src="images/comcast-interaction-01.jpg"class="bottom-margin-double image-container"/>
 				<div class="text-container">
-					<h2>Applying the XFINITY visual style</h2>
+					<h3>Evolution of the visual design</h3>
 					<p> 
-						Comcast is in the midst of overhauling it's visual language to match more closely to the X1 TV platform. This means a move towards darker blues, blurred background images, subtle gradients, and some refreshed global items, among other things. 
+						Comcast is in the midst of overhauling it's visual language on all products to match more closely to the X1 TV platform. This means a move towards darker blues, blurred background images, and subtle gradients.
 					</p>
 				</div>
-				<img src="images/comcast-mobile-02.jpg"class="bottom-margin-double image-container"/>
-				<div class="text-container">
-					<h2>Making it responsive.</h2>
-					<p> 
-						With a giant company like Comcast, it is a rarity to find a group of people who consider their mobile users to be of utmost importance. We designed the service to work primarily on mobile first, and made transitions and design considerations for desktop second.
-					</p>
-				</div>
+				<img src="images/comcast-mobile-01.jpg" class="bottom-margin-double image-container caption"/>
+				<h4 class="center bottom-margin-double">Early designs matching the X1 design language. </h4>
+				<img src="images/comcast-mobile-02.png"class="bottom-margin-double image-container"/>
 				<img src="images/comcast-desktop-01.jpg"class="bottom-margin-double image-container"/>
-				<div class="text-container">
-					<p> 
-						We were able to reuse a lot of the mobile editing patterns, almost 1-to-1, in the dialog boxes on desktop to keep both the interaction patterns consistent, and make life easier for our developers.
-					</p>
-				</div>
-				<img src="images/comcast-desktop-03.jpg" class="image-container"/>
-
+				<img src="images/comcast-home.png"class="bottom-margin-double image-container"/>
+				<img src="images/comcast-people.png"class="bottom-margin-double image-container caption"/>
+				<h4 class="center bottom-margin-double">We added a "People" concept for logical device groupings as the UI <br />continued to evolve with bolder colors and playful illustrations.</h4>
+				<img src="images/comcast-profile.png"class="bottom-margin-double image-container"/>
 
 			<h1 class="ending center"> <div class="ending-image">
-				</div>
-				Like this project?<br />Consider following me on <a href="http://www.twitter.com/LeeVW">Twitter</a> or <a href="http://www.dribbble.com/Leevw">Dribbble</a>. </h1>
+				</div>Thanks for reading. Check out my <a href="http://www.dribbble.com/leevw">Dribbble</a> or connect with me on <a href="https://www.linkedin.com/in/andrew-lee-9963a92a">LinkedIn</a>. </h1>
 			</div>
 		</div>
 
