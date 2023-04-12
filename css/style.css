@@ -691,15 +691,12 @@ sub {
 .project-06{
   background:linear-gradient(0deg, #0E1B32, #388AD9); /* Standard syntax */
 }
-.project-08{
-  background:#083451;
-  background: -webkit-linear-gradient(-139deg, #032547, #48a7cf); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-130deg, #032547, #48a7cf); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-130deg, #032547, #48a7cf); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-130deg, #032547, #48a7cf); /* Standard syntax */
-}
 .project-09{
-  background:#fd4e2c;
+  background:linear-gradient(20deg, #EEFDFA 60%, #fff 60.1%);
+}
+.project-08{
+  background: rgb(2,52,48);
+  background: linear-gradient(0deg, rgba(2,52,48,1) 0%, rgba(1,78,61,1) 100%);
 }
 .homework-container {
   padding-top:4em;
@@ -724,7 +721,7 @@ sub {
     .home-work p{
       font-size:16px;
       color:rgba(255,255,255,0.7);
-      line-height:1.2;
+      line-height:1.4;
       padding-bottom:18px;
       margin-bottom:1.5em;
     }
@@ -849,8 +846,7 @@ sub {
       margin-left:2em;
       margin-top:-3em
     }
-
-}
+  }
 
 
 @media only screen and (min-width: 1200px) {
@@ -1740,8 +1736,46 @@ a.button-smiota:hover {
   -o-transition: background 0.3s linear;
   transition: background 0.3s linear; 
   }
+a.button-flora {
+  border-radius: 40px;
+  background:rgba(2,52,48,.4);
+  padding:1em 2em;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; 
+  }
 
+a.button-flora:hover {
+  color: #fff;
+  background:#006cfa;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; 
+  }
+a.button-mongodb {
+  border-radius: 40px;
+  background:rgba(255,255,255,.2);
+  padding:1em 2em;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; 
+  }
 
+a.button-mongodb:hover {
+  color: #fff;
+  background:#00aa57;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; 
+  }
 a.button-mastercard {
   border-radius: 40px;
   background:rgba(0,0,0,.3);
